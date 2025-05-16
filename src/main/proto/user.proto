@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "com.rks.protobuff_excersice.generated.model";
+
+option java_outer_classname = "UserProto";
+
+message User{
+	string id = 1;
+	string name = 2;
+	string email = 3;
+}
+
+message UserList{
+	repeated User users = 1;
+}
